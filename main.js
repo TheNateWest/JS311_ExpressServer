@@ -34,7 +34,15 @@ app.get("/hello/:name", (req, res) => {
 
 // request query
 
-
+app.get("/bye", function(request, response){
+    let value = request.query.name
+    if (value){
+    // if (value === undefined){
+    response.send(`seee you later ${value}`)
+    } else {
+    response.send(`see you later`)
+    }
+})
 
 
 app.listen(PORT, () => { console.log('Application is listening on port ', PORT)})

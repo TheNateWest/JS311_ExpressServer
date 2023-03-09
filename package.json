@@ -1,7 +1,10 @@
 {
     "name": "expresserver",
     "scripts": {
-        "start": "node main.js"
+        "start": "nodemon app.js"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.21"
     },
     "dependencies": {
         "express": "^4.18.2"
